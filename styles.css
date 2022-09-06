@@ -1,0 +1,137 @@
+
+/* Global styles
+--------------------------*/
+html {
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+img {
+    width: 300px;
+}
+body {
+    color: #262730;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+a {
+    color: #D33F49;
+}
+
+a {
+    text-decoration: none;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h1 {
+    font-size: 60px;
+    line-height: 1;
+}
+h2 {
+    font-size: 35px;
+}
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.item-details h3 +  p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+
+/* Profile
+--------------------------*/
+header {
+    background: #77BA99;
+}
+
+/* Projects
+--------------------------*/
+.projects {
+    background: #EFF0D1;
+}
+.projects a {
+    color:aliceblue;
+    background:#262730;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.project-item{
+    overflow: hidden;
+    border-bottom: 1px solid #262730;
+    padding: 25px 0;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Education
+--------------------------*/
+.education {
+    background: #D7C0D0;
+}
+
+/* Contact
+--------------------------*/
+footer {
+    background: #77BA99;
+}
+footer a {
+    color:aliceblue;
+    background:#262730;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+/* Responsive
+--------------------------*/
+@media screen and (min-width:750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .contact-list {
+        display: flex;
+    justify-content: center;
+    }
+}
+@media screen and  (max-width:749px) {
+    h1 {font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+
+}
